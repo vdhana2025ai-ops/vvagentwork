@@ -1,6 +1,7 @@
+# following are the librarires required to run
 streamlit
-langchain
-langchain-groq
+langchain 
+langchain-groq 
 langchain-core
 ddgs
 duckduckgo-search
