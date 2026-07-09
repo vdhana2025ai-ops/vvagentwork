@@ -1,0 +1,7 @@
+# following are the librarires required to run
+#pip install streamlit -q
+#pip install langchain langchain-groq langchain-core -q
+#pip install -U ddgs -q
+#pip install duckduckgo-search langchain-community -q
+#pip install pyngrok -q
+# The Live Web Surfing Assistant
