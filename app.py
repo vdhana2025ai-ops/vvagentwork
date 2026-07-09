@@ -15,13 +15,14 @@ def web_search(query: str) -> str:
 
 #active_tools = [web_search]
 
-st.title('🌍 The Live Internet Agent')
+st.title('🌍 Venkat AI websearch Agent')
 st.write("Ask me anything about current events. I will browse the web to find the answer.")
 
 # 1. Sidebar Configuration
 with st.sidebar:
     st.header('⚙️ System Config')
-    user_api_key = st.text_input('Groq API Key:', type='password')
+    user_api_key = "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"
+    # st.text_input('Groq API Key:', type='password')
     st.info('Equipped with: DuckDuckGo Web Search Tool')
     # Active toggle value
     enable_search = st.toggle('Enable Web Search', value=True)
@@ -38,10 +39,10 @@ for msg in st.session_state.messages:
 # 4. The CORE Agentic AI Loop:
 if user_query := st.chat_input("Ask about today's news..."):
 
-    if not user_api_key:
-        st.error('Please enter your API Key in the sidebar')
+    #if not user_api_key:
+    #   st.error('Please enter your API Key in the sidebar')
 
-    else:
+#    else:
         # A. Display the user message instantly
         st.session_state.messages.append({'role': 'user', 'content': user_query})
         with st.chat_message('user'):
