@@ -21,7 +21,7 @@ st.write("Ask me anything about current events. I will browse the web to find th
 # 1. Sidebar Configuration
 with st.sidebar:
     st.header('⚙️ System Config')
-    user_api_key = "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"
+    user_api_key = "2222222222222222222222222"  
     # st.text_input('Groq API Key:', type='password')
     st.info('Equipped with: DuckDuckGo Web Search Tool')
     # Active toggle value
